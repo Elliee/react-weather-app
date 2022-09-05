@@ -1,13 +1,88 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #001d3d;
+}
+
+.App {
+  width: 900px;
+  margin: 40px auto;
+  height: 100vh;
+}
+
+@media(max-width: 992px) {
+  .App {
+    width: 500px;
+  }
+}
+
+
+.header {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 32px;
+  color: #ffd60a;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+
+input {
+  width: 200px;
+  padding: 8px;
+  border: none;
+  border-bottom: 2px solid white;
+  font-size: 16px;
+  background-color:#001d3d;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  color: white;
+}
+
+::placeholder{
+  color: white;
+}
+
+button {
+  width: 80px;
+  margin-left: 8px;
+  background-color: rgb(224, 14, 14);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color:rgb(195, 4, 4);
+}
+
+.weather-info {
+  background-color: white;
+  width: 250px;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+@media(max-width: 992px) {
+  .weather-info {
+    width: 250px;
+  }
 }
